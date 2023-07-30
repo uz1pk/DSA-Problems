@@ -5,6 +5,7 @@ import heapq
 def topKFrequent(nums: List[int], k: int) -> List[int]:
     """
     Second Pass Implementation
+    O(n log k) where n is len(nums) and k is # of top k value
     """
     frequencies, heap = Counter(nums), []
     for i in frequencies.keys():
