@@ -3,6 +3,10 @@ from TreeNode import TreeNode
 
 
 def isBalanced(root: Optional[TreeNode]) -> bool:
+    """
+    Time: O(n) where n is the number of nodes in the tree
+    Space: O(1) if we don't count the recursive call stack
+    """
     balance = True
 
     def dfs(current_node):
