@@ -4,6 +4,10 @@ from Node import Node
 
 
 def levelOrder(root: Node) -> List[List[int]]:
+    """
+    Time: O(n) - n is the number of nodes
+    Space: O(n) - n is the number of nodes
+    """
     queue = deque() if not root else deque([(root, 0)])
     result = []
 
