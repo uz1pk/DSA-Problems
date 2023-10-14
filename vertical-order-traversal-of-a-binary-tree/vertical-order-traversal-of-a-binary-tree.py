@@ -1,9 +1,9 @@
 from collections import defaultdict
-from typing import List, Optional, Tuple, Dict
+from typing import List, Optional, Tuple, Dict, Iterable
 from TreeNode import TreeNode
 
 
-def verticalTraversal(root: Optional[TreeNode]) -> List[List[int]]:
+def verticalTraversal(root: Optional[TreeNode]) -> List[Iterable[int]]:
     nodes_each_depth: Dict[int, List[Tuple[Optional[TreeNode], int]]] = defaultdict(
         list
     )
