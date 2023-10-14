@@ -19,11 +19,9 @@ def verticalTraversal(root: Optional[TreeNode]) -> List[List[int]]:
     dfs(root, 0, 0)
     keys = sorted(nodes_each_depth.keys())
     return [
-        list(
-            map(
-                lambda y: y[0].val,
-                sorted(nodes_each_depth[k], key=lambda x: (x[1], x[0].val)),
-            )
+        map(
+            lambda y: y[0].val,
+            sorted(nodes_each_depth[k], key=lambda x: (x[1], x[0].val)),
         )
         for k in keys
     ]
